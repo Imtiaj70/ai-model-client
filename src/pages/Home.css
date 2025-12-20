@@ -1,0 +1,137 @@
+.home {
+  min-height: calc(100vh - 200px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.featured-models {
+  margin-bottom: 4rem;
+}
+
+.featured-models h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.no-models {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+}
+
+.about-section {
+  margin-bottom: 4rem;
+  padding: 3rem;
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.get-started-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-bottom: 4rem;
+}
+
+.get-started-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.get-started-section p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.cta-btn.primary {
+  background-color: var(--accent);
+  color: white;
+}
+
+.cta-btn.primary:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.cta-btn.secondary {
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.cta-btn.secondary:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .featured-models h2,
+  .about-section h2,
+  .get-started-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .models-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
