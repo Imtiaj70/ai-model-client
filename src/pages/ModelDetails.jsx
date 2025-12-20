@@ -45,7 +45,7 @@ const ModelDetails = () => {
   const handlePurchase = async () => {
     setPurchasing(true);
     try {
-      const updatedModel = await fetch(`http://localhost:3000/models/${id}/purchase`, {
+      const updatedModel = await fetch(`https://ai-model-server-delta.vercel.app/models/${id}/purchase`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ buyerEmail: user?.email || "guest@example.com" }),

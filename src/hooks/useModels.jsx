@@ -77,7 +77,7 @@ export const useModels = () => {
   // 🔹 Purchase model (POST /models/:id/purchase)
   const purchaseModel = async (id, userEmail) => {
     try {
-      const response = await fetch(`http://localhost:3000/models/${id}/purchase`, {
+      const response = await fetch(`https://ai-model-server-delta.vercel.app/models/${id}/purchase`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ buyerEmail: userEmail }),
